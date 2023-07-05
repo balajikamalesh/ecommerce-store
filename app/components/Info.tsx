@@ -1,3 +1,5 @@
+"use client";
+
 import useAddToCart from "../../hooks/useAddToCart";
 import { Product } from "../../types";
 import Button from "./ui/Button";
