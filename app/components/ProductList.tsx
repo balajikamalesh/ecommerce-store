@@ -15,7 +15,7 @@ const ProductList = ({ title, items }: ProductListProps) => {
         {items.length == 0 && <EmptyResult />}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {items.map((item) => (
-            <ProductCard item={item} />
+            <ProductCard key={item.id} item={item} />
           ))}
         </div>
       </div>
